@@ -1,0 +1,17 @@
+<div class="container">
+  <h2 id="menu-categories-title" class="text-center">Registration Information</h2>
+  <fieldset ng-if="myInfoCtrl.user">
+    <span>First name: {{myInfoCtrl.user.firstname}}</span><br>
+    <span>Last name: {{myInfoCtrl.user.lastname}}</span><br>
+    <span>Email: {{myInfoCtrl.user.email}}</span><br>
+    <span>Phone: {{myInfoCtrl.user.phone}}</span><br>
+    <span>Last name:{{myInfoCtrl.user.lastname}}</span><br>
+    <menu-item menu-item="myInfoCtrl.user.menu_item">
+    </menu-item>
+  </fieldset>
+  <div ng-hide="myInfoCtrl.user">
+    <span>Not Signed Up Yet. <a href="#/signup">Sign up Now!</a></span><br>
+
+  </div>
+
+</div>
